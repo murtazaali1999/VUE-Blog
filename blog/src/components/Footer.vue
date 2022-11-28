@@ -8,16 +8,16 @@
           >
           <ul class="social-icons">
             <li>
-              <a href="#"><youTube class="svg-icon" />1</a>
+              <a href="#"><youTube class="svg-icon" /></a>
             </li>
             <li>
-              <a href="#"><twitter class="svg-icon" />2</a>
+              <a href="#"><twitter class="svg-icon" /></a>
             </li>
             <li>
-              <a href="#"><instagram class="svg-icon" />3</a>
+              <a href="#"><instagram class="svg-icon" /></a>
             </li>
             <li>
-              <a href="#"><linkedIn class="svg-icon" />4</a>
+              <a href="#"><linkedIn class="svg-icon" /></a>
             </li>
           </ul>
         </div>
@@ -42,15 +42,15 @@
   </footer>
 </template>
 
-<script lang="ts">
-import youTube from "../assets/Icons/youtube-brands.svg";
-import twitter from "../assets/Icons/twitter-brands.svg";
-import instagram from "../assets/Icons/instagram-brands.svg";
-import linkedIn from "../assets/Icons/linkedin-brands.svg";
+<script>
+import youTube from "../assets/Icons/youtube-brands.svg?component";
+import twitter from "../assets/Icons/twitter-brands.svg?component";
+import instagram from "../assets/Icons/instagram-brands.svg?component";
+import linkedIn from "../assets/Icons/linkedin-brands.svg?component";
 
 export default {
   name: "footer",
-  component: {
+  components: {
     youTube,
     twitter,
     instagram,
@@ -88,6 +88,13 @@ footer {
 
 .footer {
   margin-left: 80px;
+}
+
+.svg-icon {
+  height: 20px;
+  width: 20px;
+  margin-left: -7px;
+  margin-right: -7px;
 }
 
 .col-1 {

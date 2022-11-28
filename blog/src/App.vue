@@ -1,12 +1,15 @@
-<script lang="ts">
+<script>
 import Navigation from "./components/Navigation.vue";
 import Footer from "./components/Footer.vue";
+import BlogPost from "./components/BlogPost.vue";
+import Home from "./views/HomeView.vue";
 
 export default {
   name: "app",
   components: {
     Navigation,
     Footer,
+    Home,
   },
   data() {
     return {};
@@ -22,6 +25,7 @@ export default {
   <div class="app-wrapper">
     <div class="app">
       <Navigation />
+      <Home />
       <Footer />
     </div>
   </div>
